@@ -1,5 +1,4 @@
 amqp==1.4.9
-anyjson==0.3.3
 appdirs==1.4.4
 asgiref==3.2.10
 astroid==2.3.3
@@ -30,11 +29,10 @@ lxml==4.5.1
 mccabe==0.6.1
 multitasking==0.0.9
 networkx==2.4
-numpy==1.18.3
-pandas==1.0.3
+
 parse==1.15.0
 plotly==4.8.2
-psycopg2==2.8.5
+
 pyee==7.0.2
 pylint==2.4.4
 pyppeteer==0.2.2
