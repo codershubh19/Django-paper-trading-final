@@ -112,20 +112,28 @@
 
 
 
-
+        <div>
+        
         <div class="row">
+            
+            {% if Summary.longBusinessSummary != 'NOT'  %}
             <div class="col-10 mr-auto pl-1">
                 <h1 class="display-4 px-0 pt-3 text-primary">Business Summary</h1>
                 <hr>
             </div>
+            {% endif %}
 
         </div>
-
+        {% if Summary.longBusinessSummary != 'NOT'  %}
         <div class="row">
             <div class="col-10 mr-auto pl-1">
                 <p class="text-dark">{{Summary.longBusinessSummary}}</p>
             </div>
         </div>
+        {% endif %}
+        
+        </div>
+        
 
         <div class="col-10 mr-auto pl-1">
             <table class="table">

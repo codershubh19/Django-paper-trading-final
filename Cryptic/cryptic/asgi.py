@@ -1,5 +1,5 @@
 """
-ASGI config for paper_trading project.
+ASGI config for cryptic project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'paper_trading.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'cryptic.settings')
 
 application = get_asgi_application()

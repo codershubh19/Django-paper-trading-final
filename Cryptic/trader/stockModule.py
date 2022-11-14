@@ -62,8 +62,6 @@ class Stock:
                 'text': period,
                 "y": 1,
                 "x": 0.5},
-
-
         )
         '''
         fig.update_layout(
@@ -106,5 +104,8 @@ class Stock:
 
             if (i in summaryKeys):
                 newDict[i] = stockInfo[i]
-        newDict["longBusinessSummary"] = self.ticker.info["longBusinessSummary"]
+        if "longBusinessSummary" in self.ticker.info:
+            newDict["longBusinessSummary"] = self.ticker.info["longBusinessSummary"]
+        else:
+            newDict["longBusinessSummary"]="NOT"
         return newDict

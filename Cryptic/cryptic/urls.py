@@ -1,4 +1,4 @@
-"""paper_trading URL Configuration
+"""cryptic URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,7 +15,7 @@ Including another URLconf
 """
 
 from django.conf.urls import url, include
-from django.shortcuts import redirect
+# from django.shortcuts import redirect
 
 from accounts import views as core_views
 from django.contrib import admin

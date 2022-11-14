@@ -36,7 +36,6 @@ def leaderboard_list_view(request):
 
     context = {
         "trader_objects": trader_objects,
-        "ranks": range(0, len(trader_objects))
     }
 
     return render(request, "trader_leaderboards.html", context)
@@ -186,7 +185,6 @@ def search(request):
 
 @login_required
 def trans(request):
-    # transac=Transaction.objects.get(user=request.user)
 
     trader_objects =Transaction.objects.all().filter(user=request.user) 
     # print(trader_objects)/
