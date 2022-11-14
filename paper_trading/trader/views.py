@@ -64,7 +64,7 @@ def sell(request):
 
         user=request.user
         type='SELL'
-        number=positionsDict[TickerName]-ShareCount
+        number=ShareCount
         symbol=TickerName
         # today=date.today()
         Transaction(user=user, type=type,number=number,symbol=symbol,date=date.today()).save()
