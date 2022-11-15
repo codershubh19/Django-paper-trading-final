@@ -33,7 +33,7 @@ def leaderboard_list_view(request):
         trader.save()
 
     trader_objects = Trader.objects.order_by('-AUM')
-
+    
     context = {
         "trader_objects": trader_objects,
     }
